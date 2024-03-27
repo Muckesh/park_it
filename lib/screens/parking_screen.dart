@@ -14,15 +14,15 @@ class ParkingScreen extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
       // backgroundColor: Color(0xff252626),
-      appBar: CustomAppBar(
-        leading: const CTAButton(
+      appBar: const CustomAppBar(
+        leading: CTAButton(
           icon: Icon(Icons.menu_rounded),
         ),
-        text: const Text(
+        text: Text(
           "Choose a spot",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        action: const CTAButton(
+        action: CTAButton(
           icon: Icon(Icons.search),
         ),
       ),

@@ -17,7 +17,7 @@ class CarSlot extends StatelessWidget {
         const Divider(),
         isAvailable
             ? SizedBox(
-                height: height * 0.1, child: Center(child: Text("A 212")))
+                height: height * 0.1, child: const Center(child: Text("A 212")))
             : Image.asset(
                 "assets/images/cars.png",
                 height: height * 0.1,

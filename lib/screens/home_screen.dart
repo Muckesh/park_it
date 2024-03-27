@@ -8,11 +8,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
-        leading: const CTAButton(
+      appBar: const CustomAppBar(
+        leading: CTAButton(
           icon: Icon(Icons.menu_rounded),
         ),
-        text: const Column(
+        text: Column(
           children: [
             Text(
               "Jack Harrison",
@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-        action: const CTAButton(icon: Icon(Icons.person)),
+        action: CTAButton(icon: Icon(Icons.person)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
@@ -54,7 +54,7 @@ class HomeScreen extends StatelessWidget {
               // //  Container card
               Container(
                 decoration: BoxDecoration(
-                    color: Color(0xff303030),
+                    color: const Color(0xff303030),
                     borderRadius: BorderRadius.circular(20)),
                 height: 200,
                 width: double.infinity,

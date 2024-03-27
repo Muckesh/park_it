@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:park_it/widgets/CTAButton.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget leading;
   final Widget text;
   final Widget action;
-  CustomAppBar(
+  const CustomAppBar(
       {super.key,
       required this.leading,
       required this.text,
