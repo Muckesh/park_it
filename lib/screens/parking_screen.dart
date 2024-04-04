@@ -40,10 +40,14 @@ class ParkingScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: ListView.builder(
-                      shrinkWrap: true,
+                        shrinkWrap: true,
                         itemCount: 5,
                         itemBuilder: (context, index) {
-                          return CarSlot(isAvailable: false, height: height);
+                          return CarSlot(
+                            isAvailable: false,
+                            height: height,
+                            width: width,
+                          );
                         }),
                   ),
 
@@ -58,7 +62,11 @@ class ParkingScreen extends StatelessWidget {
                         shrinkWrap: true,
                         itemCount: 5,
                         itemBuilder: (context, index) {
-                          return CarSlot(isAvailable: true, height: height);
+                          return CarSlot(
+                            isAvailable: true,
+                            height: height,
+                            width: width,
+                          );
                         }),
                   ),
                 ],
@@ -74,7 +82,7 @@ class ParkingScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            
+
             // Book spot Button
             CustomButton(buttonText: "Book Spot", height: height),
           ],

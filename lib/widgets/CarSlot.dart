@@ -5,10 +5,11 @@ class CarSlot extends StatelessWidget {
   const CarSlot({
     super.key,
     required this.height,
-    required this.isAvailable,
+    required this.isAvailable, required this.width,
   });
 
   final double height;
+  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +20,9 @@ class CarSlot extends StatelessWidget {
             ? SizedBox(
                 height: height * 0.1, child: const Center(child: Text("A 212")))
             : Image.asset(
-                "assets/images/cars.png",
+                "assets/images/cars1.png",
                 height: height * 0.1,
+                width: width * 0.2,
               ),
       ],
     );
