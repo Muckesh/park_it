@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final Widget leading;
+  // final Widget? leading;
   final Widget text;
-  final Widget action;
-  const CustomAppBar(
-      {super.key,
-      required this.leading,
-      required this.text,
-      required this.action});
+  // final Widget? action;
+  const CustomAppBar({
+    super.key,
+    required this.text,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +15,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: AppBar(
-          leading: leading,
+          // leading: leading!,
           title: text,
           centerTitle: true,
-          actions: [action],
+          // actions: [action!],
         ),
       ),
     );

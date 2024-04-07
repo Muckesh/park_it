@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CustomAppBar(
-        leading: CTAButton(
-          icon: Icon(Icons.menu_rounded),
-        ),
+        // leading: CTAButton(
+        //   icon: Icon(Icons.menu_rounded),
+        // ),
         text: Column(
           children: [
             Text(
@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-        action: CTAButton(icon: Icon(Icons.person)),
+        // action: CTAButton(icon: Icon(Icons.person)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
